@@ -1,55 +1,109 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Charlotte Urquhart's Links</title>
-    <style>  * {
-      border: thick white solid;
-    } 
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
 
-    html {
-      min-height: 100%;
-    }
+      html, body {
+        min-height: 100%;
+      }
 
-    body {
-      padding-top: 50%;
-      padding-bottom: 50%;
-      background-image: url(unsplashphoto.jpg); background-image: linear-gradient(background-image);
-    }
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 20px;
+        font-family: Arial, sans-serif;
+        background: linear-gradient(180deg, #1f005c, #5b0060, #870160, #ac255e, #ca485c, #e16b5c, #f39060, #ffb56b);
+        color: white;
+      }
+
+      .main-container {
+        max-width: 600px;
+        width: 100%;
+        text-align: center;
+      }
+
+      .image-row img {
+        width: 128px;
+        height: 128px;
+        object-fit: cover;
+        border-radius: 50%;
+        margin: 10px auto;
+        display: block;
+      }
+
+      .name-row {
+        font-size: 24px;
+        font-weight: bold;
+        margin-bottom: 20px;
+      }
+
+      .social-icons-row a {
+        margin: 0 10px;
+        color: white;
+        text-decoration: none;
+        font-size: 18px;
+      }
+
+      .links-row {
+        margin-top: 30px;
+      }
+
+      .links-row .item {
+        margin-bottom: 20px;
+        background-color: rgba(149, 123, 173, 0.5);
+        padding: 10px;
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        text-align: left;
+      }
+
+      .links-row .item img {
+        width: 48px;
+        height: 48px;
+        object-fit: cover;
+        border-radius: 10px;
+        margin-right: 10px;
+      }
+
+      .links-row a {
+        color: white;
+        text-decoration: none;
+        font-size: 16px;
+        font-weight: bold;
+      }
     </style>
   </head>
 
   <body>
     <div class="main-container">
       <div class="image-row">
-       <img src="Linkedinphoto.jpg" alt="Charlotte's profile photo">
-      </div>
-      <div class="name-row">
-        Charlotte Urquhart
+        <img src="Linkedinphoto.jpg" alt="Charlotte's profile photo">
       </div>
 
-      <div class="social-icons-row"><a href="https://github.com/churquh2003/AppDevProject" target="_blank">Charlotte's Github
+      <div class="name-row">Charlotte Urquhart</div>
 
-      </a>
-    
-      <a href="https://www.linkedin.com/in/charlotte-urquhart/" target="_blank">Linkedin
-      </a>
+      <div class="social-icons-row">
+        <a href="https://github.com/churquh2003/AppDevProject" target="_blank">GitHub</a>
+        <a href="https://www.linkedin.com/in/charlotte-urquhart/" target="_blank">LinkedIn</a>
       </div>
 
       <div class="links-row">
         <div class="item">
-          <img src="unsplashphoto.jpg">
-
-          <a target="_blank" href="https://charlotteurquhartphotography.my.canva.site/">Photography Website
-
-          </a>
+          <img src="unsplashphoto.jpg" alt="Photography Thumbnail">
+          <a href="https://charlotteurquhartphotography.my.canva.site/" target="_blank">Photography Website</a>
         </div>
       </div>
-      <h1 style="font-size: 40px; color:blue; text-align: center;">main-container</h1>
-      <p></p>
-      <h2 style="font-size: 40px; text-align: right;">image-row</h2>
-      <h3 style="font-size: 40px; text-align: right;">name-row</h3>
-      <h4 style="font-size: 40px; text-align: right;">social-icons-row</h4>
-      <h5 style="font-size: 40px; text-align: right;">links-row</h5>
-    </body>
+    </div>
+  </body>
 </html>
